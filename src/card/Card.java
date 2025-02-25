@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Card 클래스
-// 2025-02-24 작성
+// 2025-02-24 작성.
 public class Card {
     private CardShape shape; // 카드 문양
     private int number; // 카드 숫자 (1~13, 조커는 예외)
