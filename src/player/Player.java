@@ -1,5 +1,8 @@
 package src.player;
 
+import src.card.Card;
+import src.card.CardDeck;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +29,7 @@ public abstract class Player {
         handCard.add(cardDeck.draw());
     }
     // 카드 내기 (핸드 카드 마이너스)
-    public Card drawOut(Card card) {
-        return handCard.remove(card);
+    public Card drawOut(int index) {
+        return handCard.remove(index);
     }
 }
