@@ -58,7 +58,7 @@ public class Card {
 
     // 54장의 카드 리스트 초기화 메서드
     private static void initializeCardList() {
-        CardShape[] shapes = {CardShape.CLUBS, CardShape.DIAMONDS, CardShape.HEARTS, CardShape.SPADES};
+        CardShape[] shapes = {CardShape.CLOVER, CardShape.DIAMONDS, CardShape.HEARTS, CardShape.SPADES};
 
         for (CardShape shape : shapes) {
             for (int num = 1; num <= 13; num++) {

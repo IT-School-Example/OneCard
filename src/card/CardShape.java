@@ -2,7 +2,7 @@ package src.card;
 
 // 카드 문양 enum
 public enum CardShape {
-    CLUBS("♣"), DIAMONDS("♦"), HEARTS("♥"), SPADES("♠"), JOKER("JOKER");
+    CLOVER("♣"), DIAMONDS("♦"), HEARTS("♥"), SPADES("♠"), JOKER("JOKER");
 
     private final String symbol;
 
