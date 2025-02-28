@@ -10,7 +10,7 @@ public abstract class Player {
 
     protected String name; // 플레이어 이름
 
-    private List<Card> handCard = new ArrayList<>();
+    protected List<Card> handCard = new ArrayList<>();
 
     public Player(String name) {
         this.name = name;
