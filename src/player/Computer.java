@@ -2,6 +2,7 @@ package src.player;
 
 import src.card.Card;
 import src.card.CardDeck;
+import src.rule.Rule;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,7 @@ public class Computer extends Player {
         Card card = handCard.get(index);
 
         // 해당 카드가 같은 문양이거나 같은 숫자이지를 밑에서 판단한다
-        while (!Rule.isValiableCard(card)) {
+        while (!Rule.isValidCard(card)) {
             index = ((int) Math.random() * handCard.size())+1;
             card = handCard.get(index);
         }
