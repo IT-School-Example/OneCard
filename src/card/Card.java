@@ -28,6 +28,11 @@ public class Card {
         this.shape = CardShape.JOKER;
         this.number = isColorJoker ? 1 : 0; // 1: 컬러 조커, 0: 흑백 조커
         this.effect = player -> player.drawN(5); // 상대 5장 뽑게 하기
+        if(number==1){ // 컬러 조커이면
+            this.effect =player -> player.drawN(5); // 상대 5장 뽑게 하기
+        }else if(number==0){ // 흑백 조커이면
+            this.effect =player -> player.drawN(4); // 상대 4장 뽑게 하기
+        }
     }
 
     public static List<Card> getAllCards() {
